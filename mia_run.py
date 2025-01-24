@@ -1,4 +1,3 @@
-# Importing required libraries and modules for argument parsing, metrics, and model interaction
 import os, argparse
 
 from collections import defaultdict

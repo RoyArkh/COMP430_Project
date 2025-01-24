@@ -12,7 +12,7 @@ def replace_first_column(doc1, doc2, output_doc):
     with open(doc2, 'r') as file2:
         reader2 = csv.reader(file2)
         header_doc2 = next(reader2)  # Get header
-        rows_doc2 = [row for i, row in enumerate(reader2) if i < 700 and i != 99]  # Skip the 100th row
+        rows_doc2 = [row for i, row in enumerate(reader2) if i < 700 and i != 99]  #skip the 100th row ->bcs single word
 
     # Replace the first column of the second document
     for i, row in enumerate(rows_doc2):
